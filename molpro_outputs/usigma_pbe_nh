@@ -1,0 +1,434 @@
+
+ Working directory              : /scratch/trushin/44018/
+ Global scratch directory       : /scratch/trushin/44018/
+ Wavefunction directory         : /home/trushin/wfu/
+ Main file repository           : /scratch/trushin/44018/
+
+ id        : chemieegortrushi
+
+ Nodes     nprocs
+ node061      1
+ GA implementation: MPI file
+ GA implementation (serial work in mppx): MPI file
+
+ Using customized tuning parameters: mindgm=1; mindgv=20; mindgc=4; mindgr=1; noblas=0; minvec=7
+ default implementation of scratch files=df  
+
+
+ Variables initialized (1025), CPU time= 0.00 sec
+ memory,8000,m
+ gthresh,twoint=1d-20,energy=1d-10,orbital=1d-8
+ gdirect
+ basis={
+ default,aug-cc-pwCVQZ
+ set,RI
+ default,aug-cc-pwCVQZ/mp2fit
+ }
+ 
+ symmetry,nosym
+ angstrom
+ geometry={
+ Including file //home/stfaus/PhDProject/RPA_functional/GMTKN55/W4-17/GEOMETRIEN/W4-17/nh/struc.xyz
+ }
+ 
+ charge=0
+ 
+ spin=2
+ 
+ df-uks,pbe,df_basis=aug-cc-pwCV5Z/mp2fit,maxit=200
+ {cfit,basis_coul=aug-cc-pwCV5Z/mp2fit,basis_exch=aug-cc-pwCV5Z/mp2fit}
+ 
+ user,urirpa,orb=2200.2,nquad=50,rpa=1,maxit=0,\
+ thr_solve=1d-99,\
+ dfit=1,direct=1,\
+ thr_overlap_ri=1d-10,thr_fai_ri=1d-10,\
+ sigma_param='PBE_S2',verb=1,sigma=1
+ Commands initialized (840), CPU time= 0.02 sec, 684 directives.
+ Default parameters read. Elapsed time= 0.13 sec
+
+ Checking input...
+ Passed
+1
+
+
+                                         ***  PROGRAM SYSTEM MOLPRO  ***
+                                       Copyright, TTI GmbH Stuttgart, 2015
+                                    Version 2022.3 linked                         
+
+
+ **********************************************************************************************************************************
+ LABEL *                                                                                 
+  (28 PROC) 64 bit serial version                                                        DATE: 01-Dec-22          TIME: 18:08:41  
+ **********************************************************************************************************************************
+
+ SHA1:             a01b30e7401ae6f7702ea60a3f31afbbc41491be
+ **********************************************************************************************************************************
+
+ Memory per process:      8000 MW
+ Total memory per node:   8000 MW
+
+ GA preallocation disabled
+ GA check disabled
+
+ Variable memory set to 8000.0 MW
+
+
+ THRESHOLDS:
+
+ ZERO    =  1.00D-12  ONEINT  =  1.00D-12  TWOINT  =  1.00D-20  PREFAC  =  1.00D-14  XXXXXX  =  1.00D-09  EORDER  =  1.00D-04
+ ENERGY  =  1.00D-10  ETEST   =  0.00D+00  EDENS   =  0.00D+00  THRDEDEF=  1.00D-06  GRADIENT=  1.00D-05  STEP    =  1.00D-03
+ ORBITAL =  1.00D-08  CIVEC   =  1.00D-05  COEFF   =  1.00D-04  PRINTCI =  5.00D-02  PUNCHCI =  9.90D+01  OPTGRAD =  3.00D-04
+ OPTENERG=  1.00D-06  OPTSTEP =  3.00D-04  THRGRAD =  1.00D-10  COMPRESS=  1.00D-11  VARMIN  =  1.00D-07  VARMAX  =  1.00D-03
+ THRDOUB =  0.00D+00  THRDIV  =  1.00D-05  THRRED  =  1.00D-07  THRPSP  =  1.00D+00  THRDC   =  1.00D-10  THRCS   =  1.00D-10
+ THRNRM  =  1.00D-08  THREQ   =  0.00D+00  THRDE   =  1.00D+00  THRREF  =  1.00D-05  SPARFAC =  1.00D+00  THRDLP  =  1.00D-07
+ THRDIA  =  1.00D-10  THRDLS  =  1.00D-07  THRGPS  =  0.00D+00  THRKEX  =  0.00D+00  THRDIS  =  2.00D-01  THRVAR  =  1.00D-10
+ THRLOC  =  1.00D-06  THRGAP  =  1.00D-06  THRLOCT = -1.00D+00  THRGAPT = -1.00D+00  THRORB  =  1.00D-06  THRMLTP =  0.00D+00
+ THRCPQCI=  1.00D-10  KEXTA   =  0.00D+00  THRCOARS=  0.00D+00  SYMTOL  =  1.00D-06  GRADTOL =  1.00D-06  THROVL  =  1.00D-08
+ THRORTH =  1.00D-08  THRDLOVL= -1.00D+00  GRID    =  1.00D-06  GRIDMAX =  1.00D-03  DTMAX   =  0.00D+00  THROCCDE=  1.00D-01
+ THROCCDE=  1.00D-01  THRPRINT=  2.50D-01
+
+ SETTING BASIS          =    AUG-CC-PWCVQZ
+ ZSYMEL=NOSYM
+ ZUNIT=ANG
+ 
+
+ Geometry recognized as XYZ
+
+ SETTING CHARGE         =      0.0000000D+00                                  
+ SETTING SPIN           =         2.00000000                                  
+
+
+ Recomputing integrals since basis changed
+
+
+ Using spherical harmonics
+
+ Library entry N      S aug-cc-pwCVQZ        selected for orbital group  1
+ Library entry N      P aug-cc-pwCVQZ        selected for orbital group  1
+ Library entry N      D aug-cc-pwCVQZ        selected for orbital group  1
+ Library entry N      F aug-cc-pwCVQZ        selected for orbital group  1
+ Library entry N      G aug-cc-pwCVQZ        selected for orbital group  1
+ Library entry H      S aug-cc-pVQZ          selected for orbital group  2
+ Library entry H      P aug-cc-pVQZ          selected for orbital group  2
+ Library entry H      D aug-cc-pVQZ          selected for orbital group  2
+ Library entry H      F aug-cc-pVQZ          selected for orbital group  2
+
+
+ PROGRAM * SEWARD (Integral evaluation for generally contracted gaussian basis sets)     Author: Roland Lindh, 1990
+
+ Geometry written to block  1 of record 700
+
+
+ Point group  C1  
+
+
+
+ ATOMIC COORDINATES
+
+ NR  ATOM    CHARGE       X              Y              Z
+
+   1  N       7.00    0.000000000    0.000000000    0.245001102
+   2  H       1.00    0.000000000    0.000000000   -1.715007716
+
+ Bond lengths in Bohr (Angstrom)
+
+ 1-2  1.960008819
+     ( 1.037192000)
+
+ NUCLEAR CHARGE:                    8
+ NUMBER OF PRIMITIVE AOS:         209
+ NUMBER OF SYMMETRY AOS:          170
+ NUMBER OF CONTRACTIONS:          155   (  155A   )
+ NUMBER OF INNER CORE ORBITALS:     0   (    0A   )
+ NUMBER OF OUTER CORE ORBITALS:     1   (    1A   )
+ NUMBER OF VALENCE ORBITALS:        5   (    5A   )
+
+
+ NUCLEAR REPULSION ENERGY    3.57141250
+
+ 
+ Basis set:    RI
+ Basis size:   302
+ Sphericals:   T
+
+ **********************************************************************************************************************************
+
+ EXTRA SYMMETRY OF AOS IN SYMMETRY 1:   1 1 1 1 1 1 1 1 1 2   3 1 2 3 1 2 3 1 2 3   1 2 3 1 2 3 1 2 3 1   2 3 1 1 4 2 5 3 1 4
+                                        2 5 3 1 4 2 5 3 1 4   2 5 3 1 4 2 5 3 1 4   2 5 3 2 3 1 6 4 7 5   2 3 1 6 4 7 5 2 3 1
+                                        6 4 7 5 2 3 1 6 4 7   5 1 4 2 8 3 5 9 6 7   1 4 2 8 3 5 9 6 7 1   1 1 1 1 2 3 1 2 3 1
+                                        2 3 1 2 3 1 1 4 2 5   3 1 4 2 5 3 1 4 2 5   3 2 3 1 6 4 7 5 2 3   1 6 4 7 5
+
+ Eigenvalues of metric
+
+         1 0.300E-04 0.121E-03 0.510E-03 0.856E-03 0.107E-02 0.112E-02 0.112E-02 0.138E-02
+
+
+ OPERATOR DM      FOR CENTER  0  COORDINATES:    0.000000    0.000000    0.000000
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      18       29.45       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1700   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    OPER   
+
+ PROGRAMS   *        TOTAL       INT
+ CPU TIMES  *         6.89      6.71
+ REAL TIME  *         3.60 SEC
+ DISK USED  *        29.76 MB
+ **********************************************************************************************************************************
+
+
+ Program * Unrestricted Kohn-Sham
+
+ Density functional group PBE=PBEX+PBEC
+ Functional: PBEX(Automatically generated (new) PBEX)                          Gradient terms: 1
+ Functional: PBEC(Automatically generated (new) PBEC)                          Gradient terms: 1
+ 
+ Functional: PBEX                   Factor:  1.0000
+ Functional: PBEC                   Factor:  1.0000
+ 
+
+ Setting radial_scaling=1d0
+ Radial grid threshold:                     5.0D-07
+ Global grid threshold:                     1.0D-06
+ Angular grid threshold:                    1.0D-07
+ Fac_Neighbour:                                 4.0
+ Size adjustment in partitioning scheme:   TREUTLER
+ Skip grid points with weights lower than:  1.0D-20
+ Grid orientation:                                T
+ Pruning method:                                  4
+ Pruning function:                                0
+
+ Generated new metagrid on record  1800.2 with target accuracy 1.0D-06 and 7646 points in CPU time    4.6
+ Computed new grid on record 1800.1 in CPU time    4.8
+ Grid points discarded due to weight cutoff:      25
+
+ DFT orbital screening threshold (tolorb):   1.0D-11
+
+ Basis set AUG-CC-PWCV5Z/MP2FIT generated. Number of basis functions:   455 
+ Reserved 6 MW to cache 100.0% of significant integrals. CPU: 4.0 sec
+
+ Coulomb and exchange fitting
+ Thresholds for fitting:       THRAO_COUL= 1.0D-17    THRAO_EXCH= 1.0D-15    THRMO= 1.0D-14    THRPROD= 1.0D-14    THRASM= 1.0D-14
+                               THR2HLF=    1.0D-14
+ 
+ Orbital guess generated from atomic densities. Full valence occupancy:    6
+ Using density fitting in orbital guess
+ 
+
+ Initial alpha occupancy:   5
+ Initial beta  occupancy:   3
+
+ Elapsed time for starting guess:      6.87 sec
+
+ NELEC=    8   SYM=1   MS2=2   THRE=1.0D-11   THRD=1.0D-08   THRG=1.0D-08  HFMA2=F  DIIS_START=2   DIIS_MAX=10   DIIS_INCORE=F
+
+ Initial level shifts:    0.20 (ALPHA)    0.20 (BETA)
+
+ ITER         ETOT            DE          GRAD         DDIFF    DIIS  NEXP   TIME(IT)  TIME(TOT)  DIAG
+   1    -55.16850240   -55.16850240     0.00D+00     0.00D+00     0     0       3.24     10.11    start
+   2    -55.17422560    -0.00572320     0.37D-02     0.38D-01     1     0       3.05     13.16    diag
+   3    -55.17597818    -0.00175258     0.20D-02     0.23D-02     2     0       2.98     16.14    diag
+   4    -55.17609900    -0.00012081     0.63D-03     0.12D-02     3     0       3.04     19.18    diag
+   5    -55.17611265    -0.00001365     0.17D-03     0.24D-03     4     0       3.05     22.23    diag
+   6    -55.17611387    -0.00000122     0.40D-04     0.95D-04     5     0       3.00     25.23    diag
+   7    -55.17611403    -0.00000016     0.95D-05     0.20D-04     6     0       3.05     28.28    diag
+   8    -55.17611405    -0.00000002     0.38D-05     0.47D-05     6     0       3.07     31.35    diag
+   9    -55.17611406    -0.00000000     0.13D-05     0.14D-05     6     0       3.17     34.52    diag
+  10    -55.17611406    -0.00000000     0.45D-06     0.53D-06     6     0       3.20     37.72    diag/ort
+  11    -55.17611406    -0.00000000     0.17D-06     0.20D-06     6     0       3.07     40.79    diag
+  12    -55.17611406    -0.00000000     0.62D-07     0.77D-07     6     0       3.09     43.88    diag
+  13    -55.17611406    -0.00000000     0.22D-07     0.29D-07     6     0       3.04     46.92    diag
+  14    -55.17611406    -0.00000000     0.89D-08     0.11D-07     6     0       3.01     49.93    diag
+  15    -55.17611406     0.00000000     0.33D-08     0.42D-08     6     0       3.02     52.95    diag
+
+ Final alpha occupancy:   5
+ Final beta  occupancy:   3
+ 
+ !UKS STATE 1.1 Energy                -55.176114056431
+  UKS One-electron energy             -81.608284318490
+  UKS Two-electron energy              29.964624737874
+  UKS Kinetic energy                   55.003252702855
+  UKS Nuclear energy                    3.571412502527
+  UKS Virial quotient                  -1.003142747839
+ Density functional                    -7.10386698     PBEX=-6.87931356 PBEC=-0.22455342
+ 
+ !UKS STATE 1.1 Dipole moment          -0.00000000    -0.00000000    -0.58236453
+ Dipole moment /Debye                  -0.00000000    -0.00000000    -1.48022299
+
+ EXPECTATION VALUE OF S**2:             2.00507110
+
+ Orbital energies for positive spin:
+
+           1.1          2.1          3.1          4.1          5.1          6.1          7.1
+    -14.068232    -0.768521    -0.357850    -0.291122    -0.291122    -0.024097     0.052114
+
+ Orbital energies for negative spin:
+
+           1.1          2.1          3.1          4.1          5.1
+    -14.030987    -0.674526    -0.318237    -0.158744    -0.158744
+
+
+ HOMO      5.1    -0.291122 =      -7.9218eV
+ LUMO     -4.1    -0.158744 =      -4.3196eV
+ LUMO-HOMO         0.132378 =       3.6022eV
+
+ Orbitals saved in record  2200.2
+
+ Occupation number threshold for pseudo-canonical orbitals: 1.9990 (occupied), 0.0010 (virtual)
+
+ Number of pseudo-canonical occupied orbitals per symmetry:    2
+ Number of active natural orbitals per symmetry:               4
+
+ Natural orbitals saved to record    2200.2 (Orbital set 3)
+
+ Orbital spaces for UNO-CAS (Min. occupation: 0.020  Max. occupation: 1.980):
+
+ Closed:        3
+ Active:        2
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      19       29.68       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1700     1800   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    OPER     GRID   
+
+              2       5        1.32       700     1000      520     1800     2200   
+                                         GEOM     BASIS   MCVARS    GRID      UKS  
+
+              4       4        4.88      4001     2900     3000     3100   
+                                        JINV/CD    
+
+ PROGRAMS   *        TOTAL    DF-UKS       INT
+ CPU TIMES  *        65.27     58.34      6.71
+ REAL TIME  *         5.75 SEC
+ DISK USED  *        35.94 MB
+ **********************************************************************************************************************************
+
+ Simple post-self-consistent spin-unrestricted dRPA
+ with alpha and beta blocks of the same size
+ (without MPI)
+ 
+Read Orbital Records from 2200.2
+Read Reference density from    0.0
+Write Orbital Records to 2201.2
+Write VxNL-VxL Records to    0.0
+ Maximum number of iterations:                      0
+ Minimum number of iterations:                      3
+ Maximum size of DIIS matrix:                     10
+Threshold for energy convergence:     1.000E-08
+Threshold for Inversion convergence:     1.000E-08
+Threshold for OEP calculation:     1.000E-06
+ Threshold for RPA calculation:   1.000000000000000E-006
+ Threshold for response matrix inversion in RPA:  1.000000000000000E-004
+ Threshold for logarithmic function in RPA:  1.000000000000000E-006
+ Another threshold for logarithmic function in RPA:  1.000000000000000E-010
+ Threshold for inverse eigenvalue difference in RPA:  1.000000000000000E-008
+ Threshold for eigenproblem solver:   1.000000000000000E-099
+ Solver for eigenproblems: TIKH2
+ Use density fitting.
+ use direct RPA for correlation
+ Quadrature points:                    50
+ Use rational function in Gauss-Legendre quadrature.
+ Scaling factor:    2.50000000000000     
+ Molecular orbitals read from record     2200.2  Type=UKS/ALPHA  
+ Orbital energies read from record       2200.2  Type=UKS/ALPHA  
+ Density matrix read from record         2200.2  Type=UKS/CHARGE  
+ Molecular orbitals read from record     2200.2  Type=UKS/BETA  
+ Orbital energies read from record       2200.2  Type=UKS/BETA  
+ Density matrix read from record         2200.2  Type=UKS/SPIN  
+ Occupation numbers read from record     2200.2  Type=UKS/UKS  
+ Occupation numbers read from record     2200.2  Type=UKS/UKS  
+ Basis set AWCV5Z/MP2FIT generated.      Number of basis functions:   455 
+Number of nonsingular components:  301
+naux_charge_ri:      301
+Sigma-functional will be used instead of RPA
+
+    ifreq    omega             dE/domega       Ecorr
+     1      0.001418         -2.68392464     -0.00155482
+     2      0.007482         -2.68241188     -0.00518381
+     3      0.018442         -2.67453486     -0.01090229
+     4      0.034386         -2.65199857     -0.01869974
+     5      0.055439         -2.60534145     -0.02851039
+     6      0.081769         -2.52827526     -0.04019386
+     7      0.113588         -2.42130782     -0.05354552
+     8      0.151158         -2.29064739     -0.06832708
+     9      0.194793         -2.14420492     -0.08429353
+    10      0.244867         -1.98871487     -0.10120580
+    11      0.301818         -1.82863544     -0.11882931
+    12      0.366160         -1.66749161     -0.13693690
+    13      0.438493         -1.50810248     -0.15531089
+    14      0.519512         -1.35265692     -0.17374380
+    15      0.610027         -1.20158457     -0.19201925
+    16      0.710977         -1.05559986     -0.20991468
+    17      0.823456         -0.91784725     -0.22724715
+    18      0.948736         -0.79074628     -0.24387944
+    19      1.088308         -0.67538625     -0.25971018
+    20      1.243915         -0.56983191     -0.27460904
+    21      1.417610         -0.47210823     -0.28839785
+    22      1.611818         -0.38311996     -0.30092098
+    23      1.829414         -0.30384675     -0.31206204
+    24      2.073834         -0.23331294     -0.32168466
+    25      2.349198         -0.17222549     -0.32969987
+    26      2.660482         -0.12169217     -0.33611374
+    27      3.013741         -0.08100720     -0.34096897
+    28      3.416394         -0.04953085     -0.34436057
+    29      3.877610         -0.02709262     -0.34649104
+    30      4.408827         -0.01387354     -0.34775124
+    31      5.024457         -0.00907721     -0.34870989
+    32      5.742859         -0.00906154     -0.34983068
+    33      6.587709         -0.00917954     -0.35117136
+    34      7.589965         -0.00803821     -0.35257046
+    35      8.790716         -0.00585207     -0.35379711
+    36     10.245443         -0.00234290     -0.35439559
+    37     12.030510          0.00166175     -0.35387120
+    38     14.253364          0.00525711     -0.35178923
+    39     17.069035          0.00818737     -0.34764466
+    40     20.707869          0.01006976     -0.34098618
+    41     25.524089          0.00976007     -0.33233445
+    42     32.085267          0.00697332     -0.32378156
+    43     41.347333          0.00318457     -0.31816039
+    44     55.023205          0.00076134     -0.31612674
+    45     76.434846          0.00060286     -0.31352260
+    46    112.736462          0.00088637     -0.30673530
+    47    181.759690          0.00046819     -0.29945886
+    48    338.892100          0.00009307     -0.29580230
+    49    835.297317          0.00000251     -0.29542327
+    50   4408.244086         -0.00000000     -0.29542650
+
+ reference energy =        -54.976667916743
+
+ correlation energy =         -0.295426496625
+
+ Total energy =        -55.272094413369
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      19       29.68       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1700     1800   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    OPER     GRID   
+
+              2       5        1.41       700     1000      520     1800     2200   
+                                         GEOM     BASIS   MCVARS    GRID      UKS  
+
+              4       1        1.61      4000   
+                                         JMAT   
+
+ PROGRAMS   *        TOTAL      USER    DF-UKS       INT
+ CPU TIMES  *       132.83     67.46     58.34      6.71
+ REAL TIME  *         8.30 SEC
+ DISK USED  *        37.08 MB
+ **********************************************************************************************************************************
+
+ USER/aug-cc-pWCVQZ energy=    -55.272094413369
+
+            USER          DF-UKS
+    -55.27209441    -55.17611406
+ **********************************************************************************************************************************
+ Molpro calculation terminated
